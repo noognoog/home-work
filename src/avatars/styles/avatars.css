@@ -1,0 +1,67 @@
+/* 여기에 스타일을 구현해 주세요 */
+
+.image-box {
+  padding: 100px;
+}
+
+li {
+  display: inline;
+  position: relative;
+  margin-left: 20px;
+}
+li:nth-child(1) {
+  margin-left: 0px;
+}
+
+img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+/* 첫번쨰 줄 활성 상태 표시 */
+.first li::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  width: 17.78px;
+  height: 17.78px;
+  box-sizing: border-box;
+  background-color: #4cfe88;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.first li:nth-child(1)::after,
+.first li:nth-child(3)::after {
+  background-color: #dbdbdb;
+}
+
+/* 두번째 줄 활성 상태표시 */
+.second li::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  width: 17.78px;
+  height: 17.78px;
+  box-sizing: border-box;
+  background-color: #4cfe88;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.second li:nth-child(3)::after,
+.second li:nth-child(4)::after {
+  background-color: #dbdbdb;
+}
+
+/* 스크린 리더 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
