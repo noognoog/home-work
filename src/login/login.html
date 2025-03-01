@@ -50,10 +50,27 @@
         />
       </svg>
       <form class="form-container">
-        <input type="email" placeholder="아이디(이메일)" required />
-        <span class="invalid-text">아이디는 입력 형식을 지켜주세요.</span>
-        <input type="password" placeholder="비밀번호" required />
-        <span class="invalid-text">비밀번호는 10자리 이상 입력해주세요.</span>
+        <label for="email">
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="아이디(이메일)"
+            required
+          />
+          <span class="invalid-text">아이디는 입력 형식을 지켜주세요.</span>
+        </label>
+        <label for="password">
+          <input
+            id="email"
+            type="password"
+            name="email"
+            minlength="10"
+            placeholder="비밀번호"
+            required
+          />
+          <span class="invalid-text">비밀번호는 10자리 이상 입력해주세요.</span>
+        </label>
         <button>로그인</button>
         <div class="login-ip-container">
           <div class="login-checkbox">
@@ -63,12 +80,13 @@
             </div>
             <span>로그인 상태유지</span>
           </div>
-          <div
+          <a
+            href="./pages/ip_security.html"
             class="ip-checkbox"
             style="height: 24px; font-size: 1rem; color: #121212"
           >
             IP보안 OFF
-          </div>
+          </a>
         </div>
       </form>
     </div>
