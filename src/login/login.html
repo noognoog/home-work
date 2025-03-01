@@ -11,7 +11,7 @@
       href="/src/assets/favicon/likelion.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/src/login/styles/login.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
     <link
       rel="stylesheet"
       as="style"
@@ -50,8 +50,10 @@
         />
       </svg>
       <form class="form-container">
-        <input type="email" placeholder="아이디(이메일)" />
-        <input type="password" placeholder="비밀번호" />
+        <input type="email" placeholder="아이디(이메일)" required />
+        <span class="invalid-text">아이디는 입력 형식을 지켜주세요.</span>
+        <input type="password" placeholder="비밀번호" required />
+        <span class="invalid-text">비밀번호는 10자리 이상 입력해주세요.</span>
         <button>로그인</button>
         <div class="login-ip-container">
           <div class="login-checkbox">
@@ -63,9 +65,14 @@
               />
               <img src="/src/login/checked.svg" class="checked" alt="checked" />
             </div>
-            <span style="">로그인 상태유지</span>
+            <span>로그인 상태유지</span>
           </div>
-          <div class="ip-checkbox" style="height: 24px">IP보안 OFF</div>
+          <div
+            class="ip-checkbox"
+            style="height: 24px; font-size: 1rem; color: #121212"
+          >
+            IP보안 OFF
+          </div>
         </div>
       </form>
     </div>
