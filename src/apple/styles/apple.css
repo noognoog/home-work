@@ -1,0 +1,101 @@
+@import "./card-component.css";
+@import "./reset.css";
+@import "./theme.css";
+@import "./base.css";
+
+/* 카드 레이아웃 */
+
+/* .airpod {
+  background-image: url("/src/apple/products/airpods_pro.jpeg");
+
+  background-repeat: no-repeat;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(300px, 100%);
+}
+
+.ipad_pro {
+  height: 548px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/apple/products/ipad_pro.jpeg");
+}
+
+.ipad_air {
+  height: 548px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/apple/products/ipad_air.jpeg");
+}
+
+.iphone15_pro {
+  height: 548px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/apple/products/iphone15_pro.jpeg");
+}
+
+.iphone15 {
+  height: 548px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/apple/products/iphone15.jpeg");
+}
+
+.watch {
+  height: 548px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/apple/products/apple_watch.jpeg");
+}
+
+.macbook_air {
+  height: 548px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/apple/products/macbook_air.jpeg");
+}
+
+.airpods_pro {
+  height: 548px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/apple/products/airpods_pro.jpeg");
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: minmax(300px, 50%) minmax(300px, 50%);
+  }
+  .ipad_pro {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+  .ipad_air {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+  .iphone15_pro {
+    grid-row: 3/4;
+    grid-column: 1/3;
+  }
+}
+
+/* 
+
+<div class="ipad_air"></div>
+<div class="iphone15_pro"></div>
+<div class="iphone15"></div>
+<div class="watch"></div>
+<div class="macbook_air"></div>
+<div class="airpods_pro"></div> */
