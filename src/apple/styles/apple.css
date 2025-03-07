@@ -3,21 +3,55 @@
 @import "./theme.css";
 @import "./base.css";
 
-/* 카드 레이아웃 */
-
-/* .airpod {
-  background-image: url("/src/apple/products/airpods_pro.jpeg");
-
-  background-repeat: no-repeat;
-} */
+/* 기본 버전(모바일, 1024px 이하) */
 
 .grid-container {
   display: grid;
   grid-template-columns: minmax(300px, 100%);
+  row-gap: var(--large-spacing);
+}
+
+.content-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.button-container {
+  font-size: var(--xx-small-text);
+  display: flex;
+  column-gap: var(--small-spacing);
+  .more {
+    border-radius: 16px;
+    border: 1px solid var(--black);
+    color: var(--white);
+    background-color: var(--blue-100);
+    padding: var(--x-small-spacing) var(--small-spacing);
+  }
+  .price {
+    border-radius: 16px;
+    border: 1px solid var(--blue-100);
+    color: var(--blue-100);
+    background-color: transparent;
+    padding: var(--x-small-spacing) var(--small-spacing);
+  }
+}
+
+.title {
+  font-size: var(--large-text);
+  margin-bottom: var(--small-spacing);
+}
+.subtitle {
+  font-size: var(--base-text);
+  margin-bottom: var(--small-spacing);
+  /* line-height: 1.5; */
 }
 
 .ipad_pro {
-  height: 548px;
+  color: var(--white);
+  height: var(--size);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,7 +59,8 @@
 }
 
 .ipad_air {
-  height: 548px;
+  color: var(--black);
+  height: var(--size);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +68,8 @@
 }
 
 .iphone15_pro {
-  height: 548px;
+  color: var(--white);
+  height: var(--size);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,7 +77,8 @@
 }
 
 .iphone15 {
-  height: 548px;
+  color: var(--black);
+  height: var(--size);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -49,7 +86,8 @@
 }
 
 .watch {
-  height: 548px;
+  color: var(--white);
+  height: var(--size);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -57,7 +95,8 @@
 }
 
 .macbook_air {
-  height: 548px;
+  color: var(--black);
+  height: var(--size);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,7 +104,8 @@
 }
 
 .airpods_pro {
-  height: 548px;
+  color: var(--white);
+  height: var(--size);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

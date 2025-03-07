@@ -21,7 +21,7 @@
         border-radius: 20px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         padding: 2rem;
-        width: 400px;
+        width: 500px;
         text-align: center;
       }
 
@@ -65,6 +65,12 @@
       .homework-links a:hover {
         color: #007bff;
       }
+
+      .content-flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
     </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
@@ -83,15 +89,21 @@
         class="profile-image"
       />
       <h1 class="name">엄현욱</h1>
-      <p class="bio">멋쟁이 사자처럼 프론트엔드 부트캠프 13기 엄현욱 입니다.</p>
-      <p>과제 결과는 링크를 선택해주세요.</p>
-      <ul class="homework-links">
-        <li><a href="./src/md/markdown.md">마크다운문법과제</a></li>
-        <li><a href="./src/md/retrospect.md">회고</a></li>
-        <li><a href="./src/avatars/avatars.html">아바타과제</a></li>
-        <li><a href="./src/login/login.html">로그인과제</a></li>
-        <li><a href="./src/apple/apple.html">애플과제</a></li>
-      </ul>
+
+      <div class="content-flex-container">
+        <p class="bio">
+          멋쟁이 사자처럼 프론트엔드 부트캠프 13기 엄현욱 입니다.
+        </p>
+        <p>과제 결과는 아래 링크를 선택해주세요.</p>
+
+        <ul class="homework-links">
+          <li><a href="./src/md/markdown.md">마크다운문법과제</a></li>
+          <li><a href="./src/md/retrospect.md">회고</a></li>
+          <li><a href="./src/avatars/avatars.html">아바타과제</a></li>
+          <li><a href="./src/login/login.html">로그인과제</a></li>
+          <li><a href="./src/apple/apple.html">애플과제</a></li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
