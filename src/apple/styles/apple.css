@@ -96,7 +96,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../products/ipad_pro.jpeg");
+  background-image: image-set(
+    url("../products/ipad_pro.jpeg") 1x,
+    url("../products/ipad_pro_2x.jpeg") 2x
+  );
 }
 
 .ipad_air {
@@ -105,7 +108,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../products/ipad_air.jpeg");
+  background-image: image-set(
+    url("../products/ipad_air.jpeg") 1x,
+    url("../products/ipad_air_2x.jpeg") 2x
+  );
 }
 
 .iphone15_pro {
@@ -114,7 +120,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../products/iphone15_pro.jpeg");
+  background-image: image-set(
+    url("../products/iphone15_pro.jpeg") 1x,
+    url("../products/iphone15_pro_2x.jpeg") 2x
+  );
 }
 
 .iphone15 {
@@ -123,7 +132,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../products/iphone15.jpeg");
+  background-image: image-set(
+    url("../products/iphone15.jpeg") 1x,
+    url("../products/iphone15_2x.jpeg") 2x
+  );
 }
 
 .watch {
@@ -132,7 +144,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../products/apple_watch.jpeg");
+  background-image: image-set(
+    url("../products/apple_watch.jpeg") 1x,
+    url("../products/apple_watch_2x.jpeg") 2x
+  );
 }
 
 .macbook_air {
@@ -141,7 +156,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../products/macbook_air.jpeg");
+  background-image: image-set(
+    url("../products/macbook_air.jpeg") 1x,
+    url("../products/macbook_air_2x.jpeg") 2x
+  );
 }
 
 .airpods_pro {
@@ -150,7 +168,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../products/airpods_pro.jpeg");
+  background-image: image-set(
+    url("../products/airpods_pro.jpeg") 1x,
+    url("../products/airpods_pro_2x.jpeg") 2x
+  );
 }
 
 /* 반응형 부분(데스크탑 사이즈, 1024px) */
