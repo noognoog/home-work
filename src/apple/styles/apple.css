@@ -15,7 +15,6 @@
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 
@@ -23,6 +22,13 @@
   font-size: var(--xx-small-text);
   display: flex;
   column-gap: var(--small-spacing);
+}
+
+/* 버튼 색상 다르게 줘야해요!! */
+.ipad_pro,
+.iphone15_pro,
+.watch,
+.airpods_pro {
   .more {
     border-radius: 16px;
     border: 1px solid var(--black);
@@ -39,6 +45,26 @@
   }
 }
 
+/* 버튼 색상 다르게 줘야해요!! */
+.ipad_air,
+.iphone15,
+.macbook_air {
+  .more {
+    border-radius: 16px;
+    border: 1px solid var(--black);
+    color: var(--white);
+    background-color: var(--black);
+    padding: var(--x-small-spacing) var(--small-spacing);
+  }
+  .price {
+    border-radius: 16px;
+    border: 1px solid var(--black);
+    color: var(--black);
+    background-color: transparent;
+    padding: var(--x-small-spacing) var(--small-spacing);
+  }
+}
+
 .title {
   font-size: var(--large-text);
   margin-bottom: var(--small-spacing);
@@ -49,6 +75,21 @@
   /* line-height: 1.5; */
 }
 
+.iphone15,
+.airpods_pro {
+  .subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* line-height: 1.5; */
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* background로 이미지 처리 */
 .ipad_pro {
   color: var(--white);
   height: var(--size);
@@ -112,10 +153,13 @@
   background-image: url("../products/airpods_pro.jpeg");
 }
 
+/* 반응형 부분(데스크탑 사이즈, 1024px) */
+
 @media (min-width: 1024px) {
   .grid-container {
     display: grid;
     grid-template-columns: minmax(300px, 50%) minmax(300px, 50%);
+    row-gap: var(--extra-large-spacing);
   }
   .ipad_pro {
     grid-row: 1/2;
@@ -128,6 +172,43 @@
   .iphone15_pro {
     grid-row: 3/4;
     grid-column: 1/3;
+  }
+
+  .hidden {
+    display: block;
+    font-size: var(--small-text);
+    margin-bottom: var(--base-spacing);
+    color: var(--gray);
+  }
+  .button-container {
+    font-size: var(--x-small-text);
+  }
+
+  /* 반응형에 따라 한줄로 보여줘야 할 녀석들 */
+  .iphone15,
+  .airpods_pro {
+    .subtitle {
+      display: flex;
+      flex-direction: row;
+      /* flex로 한 줄 처리되면서 다닥다닥 붙는 부분 공백 처리 해줍시다. */
+      .line::after {
+        content: "\00a0";
+      }
+    }
+  }
+
+  .line::after {
+    content: "   ";
+  }
+
+  .subtitle {
+    font-size: var(--medium-text);
+    margin-bottom: var(--small-spacing);
+  }
+
+  .title {
+    font-size: var(--extra-large-text);
+    margin-bottom: var(--small-spacing);
   }
 }
 
